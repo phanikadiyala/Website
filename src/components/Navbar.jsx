@@ -9,7 +9,7 @@ export default function Navbar() {
     <nav>
       <div className="nav-logo">Phani Kadiyala</div>
       <ul className="nav-links">
-        {['skills', 'experience', 'education', 'contact'].map((id) => (
+        {['skills', 'experience', 'projects', 'education', 'contact'].map((id) => (
           <li key={id}>
             <a
               href={`#${id}`}

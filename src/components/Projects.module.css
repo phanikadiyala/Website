@@ -1,0 +1,85 @@
+.section {
+  background: var(--surface);
+  padding: 5rem 3rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.75rem;
+  background: var(--bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-family: var(--serif);
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.description {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background: var(--tag-bg);
+  color: var(--text);
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.links {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.linkPrimary,
+.linkSecondary {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.linkPrimary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.linkSecondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.linkPrimary:hover,
+.linkSecondary:hover {
+  opacity: 0.8;
+}
